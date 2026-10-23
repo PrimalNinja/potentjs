@@ -1,0 +1,16 @@
+/* games.css - for the ported games: black all round, no scrolling or zooming on phones
+   (c) 2026 Cyborg Unicorn Pty Ltd */
+body
+{
+	background-color:black;
+	overflow:hidden;
+	touch-action:none;
+	-webkit-user-select:none;
+	user-select:none;
+}
+
+canvas
+{
+	background-color:black;
+	touch-action:none;
+}

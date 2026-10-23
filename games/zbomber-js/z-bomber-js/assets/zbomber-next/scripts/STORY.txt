@@ -1,0 +1,386 @@
+# Z-BOMBER - the story
+# P: the Captain, J: Jin (SPEAR), M: Maya (ANVIL), D: Dr Yoon (LANTERN), A: Ari (the AI),
+# O: Marshal Odo, V: Admiral Velk, S: Sera, N: narrator
+
+=== PROLOGUE
+@N
+- 2199. MARS GATE, THE DOOR TO EARTH. OUT OF THE DARK COMES THE IRON SWARM: TEN THOUSAND MACHINES, TURNING AS ONE.
+@O
+"Battle stations! They want the vault!
+@N
+- IN THE VAULT: THE STAR KEY, A CRYSTAL THAT HOLDS THE JUMP ROUTES. THE SWARM HAS ONE TOO. HOLD BOTH, AND THE GATE IS YOURS.
+@O
+"{P}! Is the prototype ready?
+@D
+"Ready is a strong word. She has never flown. The paint is wet.
+@A
+:open
+"Correction: it dried at 0400. I watched. It was not interesting.
+@N
+- IN HANGAR NINE, THREE CRAFT WAKE: SPEAR, ANVIL, LANTERN.
+@J
+:grin
+"SPEAR is hot and so am I! Boss, say the word!
+@M
+:smirk
+"Say it before he does. ANVIL's cannon is bored.
+@D
+"Please bring her back in one piece. Or three. Three is fine.
+@P
+:smile
+"All crews, launch. Let's say hello.
+@N
+- THE Z-BOMBER FLIES. ON EVERY SCREEN, A SILVER MASK APPEARS.
+@V
+"Little lights of Earth. I am ADMIRAL VELK. I have come for your keys, and then for your sky.
+"Do not be afraid. Fear is only hope that has read the ending.
+@P
+:smirk
+"Then we'll write a different ending.
+
+=== M1IN
+@O
+"Listen up. The Swarm has dug in on the far side of the gate, and their STAR KEY is sitting in a fort of black iron.
+"Take it and bring it home. Lose ours, and the gate opens. Then it's Earth.
+@J
+:grin
+"Fort, schmort. SPEAR goes in, SPEAR comes out, everybody claps.
+@M
+:smirk
+"Everybody claps because ANVIL just blew the doors off behind you.
+@V
+"How sweet. A little ship with a little crew. Bring me your key, Captain. Save me the walk.
+@P
+"Ari. The odds?
+@A
+"Unknown. I have never done this before. Neither have you. It is very exciting.
+
+=== M1COMBINE
+@A
+:sparkle
+"Formation locked. Z-BOMBER, COMBINE!
+@J
+"SPEAR on the nose! Pointy end first!
+@M
+"ANVIL in the middle. Where the big gun lives.
+@D
+"LANTERN on the tail. Shields up. Gently, everyone. Gently!
+@N
+- THREE SHIPS. ONE THUNDERCLAP.
+
+=== M1WIN
+@N
+- THE SWARM'S STAR KEY COMES HOME TO THE MARS VAULT, STILL HUMMING. MARS GATE IS EARTH'S AGAIN.
+@J
+:grin
+"Did you see that? Three forts! I'm counting three!
+@M
+"You hit one. I hit the other two.
+@A
+"Odd. Every Swarm machine turned at the same instant. Not like a fleet. Like fingers on one hand.
+@O
+"Good work. Don't let it go to your heads. They've fallen back to the Belt. Get after them.
+"I can give you one thing for the trip. Choose.
+? LET YOON REFIT THE SHIP
+  @D
+  :smile
+  "Thicker hull plates and a spare heart for the reactor. She'll take a punch now. She won't enjoy it.
+? TAKE ODO'S FRIGATES
+  @O
+  "Three frigates from the home guard. Good crews. Bring them back, or bring me a very good reason.
+
+=== M1LOSE
+@N
+- THE SWARM DRAGS EARTH'S STAR KEY THROUGH THE GATE. THE RING OF LIGHT GOES BLACK.
+@V
+"One key. One door. One small step for my machines.
+@O
+"Fall back to the inner docks! Regroup!
+@D
+:broken
+"She's hurt, but she'll fly. Give me an hour.
+@P
+"Take two. Then we go and get it back.
+
+=== M2IN
+@N
+- THE BELT. A MILLION ROCKS TUMBLING IN THE DARK, AND MINING TOWNS DUG INTO THE BIGGEST ONES.
+@O
+"The Swarm took a rock called Bitterstone and parked their key on it. Three thousand miners live there. Get the key, and get the Swarm off their roof.
+@M
+:grin
+"Rocks. Lovely. Rocks don't dodge.
+@J
+"Rocks don't dodge. I do. Watch and learn.
+@V
+"Miners. People who dig in the dark and wait for a light that never comes. I know them well.
+@A
+"Note: he answered a question nobody asked. I am filing that.
+
+=== M2COMBINE
+@A
+"Rock field ahead. Rocks are boring. Let us be less boring. Z-BOMBER, COMBINE!
+@M
+"ANVIL locked. Somebody point me at something.
+@J
+"SPEAR locked. Somebody point me at Maya so I can win.
+@D
+:o
+"LANTERN locked. Children. Please.
+
+=== M2WIN
+@N
+- BITTERSTONE CHEERS. THE MINERS BANG THEIR HELMETS ON THE DOME. THE SWARM'S KEY IS SAFE IN THE HOLD.
+@M
+:heart
+"An old miner gave me her wrench. Her grandad's. I'm never putting it down.
+@J
+"Nobody gave me a wrench.
+@M
+"Nobody trusts you with tools.
+@A
+"{P}. In the fight, Velk left a line open. I heard breathing. Machines do not breathe.
+@P
+:o
+"Keep that between us. For now.
+@O
+"Ganymede's next. Get ready.
+? LET YOON REFIT THE SHIP
+  @D
+  "Miners' rock-steel for armour. Heavy, ugly and very hard to dent. Like Maya's opinions.
+  @M
+  "Hey!
+? TAKE THE MINERS' FRIGATES
+  @M
+  "Two ore haulers with guns welded on. The miners call them frigates. I'm not arguing.
+
+=== M2LOSE
+@N
+- THE SWARM CARRIES EARTH'S KEY OUT OF THE BELT. ONE BY ONE, THE MINING TOWNS GO DARK.
+@J
+:broken
+"That's on me. I went in too fast.
+@M
+"You went in too fast. We all went in too slow. Shut up and pass me a spanner.
+@P
+"Fall back to Ceres Dock. We go again.
+
+=== M3IN
+@N
+- GANYMEDE. ICE CITIES UNDER GLASS DOMES. OVER THEM HANGS JUPITER, ONE STORM THE SIZE OF A WORLD.
+@O
+"The Swarm's key is down in the ice, with cities all around it. No stray shots.
+@V
+"Ice remembers everything, Captain. Every footprint. Every grave. Walk carefully.
+@J
+"Boss, Jupiter's staring at me.
+@M
+"Everyone's staring at you. You're shouting.
+@N
+- A NEW FACE CUTS INTO THE CHANNEL. YOUNG. HUMAN. A SWARM UNIFORM.
+@S
+"Captain. I am SERA, second to Admiral Velk. When this battle is over, we talk. Alone.
+@A
+"She is not lying. Her heart rate says she is very frightened.
+
+=== M3COMBINE
+@A
+:star
+"Ice, storm, lightning. I find it beautiful. Z-BOMBER, COMBINE!
+@D
+"LANTERN on. Shields warm. Mind the lightning.
+@J
+"SPEAR on! Lightning's just the sky clapping for me!
+@M
+:smirk
+"ANVIL on. The sky is not clapping for you.
+
+=== M3WIN
+@N
+- THE KEY IS HOME. THE ICE CITIES LIGHT UP ONE BY ONE. ON A QUIET CHANNEL, SERA RETURNS.
+@S
+"The Swarm is not a fleet. It is one mind. When Velk thinks, ten thousand machines move.
+"And Velk is human. The last of the colony ship LONG MORNING, lost in Saturn's rings eighty years ago. He went into the machines to live. He never came out.
+@D
+:o
+"The LONG MORNING. Earth called off the search after one month.
+@S
+"He remembers. Find the wreck.
+? LET YOON REFIT THE SHIP
+  @D
+  "Ice-cooled guns for the Rings. She will run cooler and hit harder. I am very proud of her.
+? TAKE ODO'S FRIGATES
+  @O
+  "Ganymede's grateful. Four frigates, fresh from the ice yards. Try not to scratch them.
+
+=== M3LOSE
+@N
+- THE SWARM'S MACHINES CLIMB OUT OF THE ICE WITH EARTH'S KEY. JUPITER'S STORM SWALLOWS THEM.
+@S
+"I'm sorry, Captain. I couldn't stop him.
+@O
+"Back to Callisto Station. Patch up.
+@A
+"I have run the battle again eleven times. We win in four of them. We only need one.
+
+=== M4IN
+@N
+- SATURN'S RINGS. ICE AND DUST IN BANDS A THOUSAND MILES WIDE. SOMEWHERE IN THEM, A LOST COLONY.
+@O
+"Sera's numbers check out. There's a wreck in there, and the Swarm's key sits right on top of it.
+@V
+:smirk
+"You go to my grave, Captain? Tread softly. I am still lying in it.
+@J
+:o
+"Okay. That's creepy.
+@M
+"Very creepy. Fly faster.
+@D
+"Eighty years. I was a boy when they stopped looking. I remember the news.
+@A
+"I will remember this one for you. I am good at remembering.
+
+=== M4COMBINE
+@A
+"For the ones who waited. Z-BOMBER, COMBINE!
+@M
+"ANVIL on. No jokes this time.
+@J
+"SPEAR on. Okay. One joke. Later.
+@D
+"LANTERN on. Lights on. Let them see us coming.
+
+=== M4WIN
+@N
+- THE KEY IS TAKEN. BELOW, LANTERN'S LIGHTS FIND HER: THE LONG MORNING, SNAPPED IN TWO, HER NAME STILL ON HER SIDE.
+@D
+"Two thousand bunks. All empty. One log still playing.
+@N
+- A YOUNG VOICE: "ENGINEER TAV VELK. THE OTHERS ARE GONE. IF ANYONE CAN HEAR THIS... PLEASE COME."
+@J
+"Nobody came.
+@P
+"We came. Late. But we came.
+@A
+:broken
+"I would like to understand this feeling. It is heavy. I do not enjoy it.
+@O
+"Next is the Throne. Make it count.
+? LET YOON REFIT THE SHIP
+  @D
+  "Everything I have, she gets. Every plate. Every spare. This one we finish.
+? TAKE ODO'S FRIGATES
+  @O
+  "Every frigate I have left. Mars will feel naked. Don't make it for nothing.
+
+=== M4LOSE
+@N
+- THE SWARM PULLS EARTH'S KEY OFF INTO THE DUST. THE WRECK DISAPPEARS BEHIND THEM.
+@V
+"You found my grave. Now you have one of your own.
+@M
+"Not today. Today we go back to Titan and fix the ship.
+@J
+"Then we come back here and fix his face.
+
+=== M5IN
+@N
+- BEYOND NEPTUNE. A WORLD WITH NO SURFACE, ONLY A SHELL OF IRON AROUND A HOLLOW HEART. THE HOLLOW THRONE.
+@V
+"Welcome home, Captain. Mine, not yours. You have no home now. Your gates are open behind you.
+@S
+"His key is in the heart of it. Bring Ari close, and she can talk to the machines.
+@A
+"I have never spoken to ten thousand machines at once. I have barely spoken to Jin.
+@J
+"Hey!
+@P
+:smile
+"Everyone come home. That's the order.
+
+=== M5COMBINE
+@A
+:heart
+"I have learned one human thing well. We go together. Z-BOMBER, COMBINE!
+@J
+"SPEAR on, boss. Always.
+@M
+"ANVIL on. Big gun, big day.
+@D
+"LANTERN on. Shields full. My children are all here.
+
+=== M5WIN
+@N
+- THE SWARM'S KEY IS OURS. THE THRONE'S HEART LIES OPEN. TEN THOUSAND MACHINES TURN TOWARD THE Z-BOMBER.
+@A
+"I am talking to them. They are not angry. They are tired. They have been carrying his grief for eighty years.
+@N
+- THE MACHINES PART. AT THE CENTRE, WRAPPED IN WIRES, SITS AN OLD MAN WITH A SILVER MASK.
+@V
+"Beaten. By a little ship. I always knew Earth would come too late. Even to kill me.
+@P
+"We didn't come to kill you, Tav. Unplug. Come home. Or stay here alone. Your choice.
+@V
+"Home? Will anyone remember a ghost?
+@D
+"I remember. I was nine. I cried for a week.
+@N
+- A LONG SILENCE. THEN, ONE BY ONE, THE WIRES COME LOOSE. THE MASK FALLS. THE OLD MAN WEEPS.
+@V
+"I am so tired. Take me home.
+@S
+:smile
+"The machines need somebody now. I will take them to the Rings and build the colony he never reached.
+@A
+"I will help you. I know a good engineer. He worries too much.
+@D
+"I worry exactly enough.
+@N
+- THE IRON SWARM GOES QUIET. THE GATES OF THE SOLAR SYSTEM BELONG TO NO ENEMY TONIGHT.
+
+=== M5LOSE
+@N
+- THE LAST GATE SLAMS SHUT BEHIND THE SWARM WITH EARTH'S KEY. THE HOLLOW THRONE GOES DARK.
+@V
+"So close. For a moment, I almost felt something. Go home, little lights.
+@D
+"She's holding. Barely. Fall back to Triton.
+@P
+"Rest. Fix. Then we come back and finish this. Together.
+
+=== ENDING
+@N
+- MARS. THE GATE SHINES. A BAND IS PLAYING, BADLY. MARSHAL ODO PINS MEDALS ON THE WHOLE CREW.
+@O
+"Proud of you. Don't tell anyone I said that.
+@J
+"Final score, boss: SPEAR forty-one, ANVIL forty.
+@M
+"ANVIL forty-two. I counted the moon you scratched.
+@D
+"Nobody scratched anything. I checked her twice. Well. One scratch.
+@N
+- IN THE HOSPITAL ON PHOBOS, TAV VELK READS HIS FIRST LETTER IN EIGHTY YEARS. IT IS FROM SERA.
+@A
+"{P}. I have written my first joke. Watch.
+@N
+- ARI PUSHES THREE MESS TABLES TOGETHER AND LOADS THEM WITH FOOD.
+@A
+:sparkle
+"Dinner. COMBINE!
+@P
+:grin
+"Ten out of ten, Ari.
+
+=== GAMEOVER
+@N
+- THE LAST STAR KEY IS GONE. ONE BY ONE, THE GATES TURN BLACK, ALL THE WAY TO EARTH.
+@V
+"Do not weep, little lights. I waited eighty years. Now you can wait too.
+@O
+"Get the crew out. Hide the ship. One day we'll need her again.
+@D
+"I'll keep her warm. I always do.
+@N
+- THE IRON SWARM WINS THIS WAR... FOR NOW.

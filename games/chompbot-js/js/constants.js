@@ -1,0 +1,29 @@
+
+// DEFAULTS
+
+//var XRESOLUTION = 320;	// 40
+var YRESOLUTION = 200;	// 25
+var XRESOLUTION = 320;	// 40
+//var YRESOLUTION = 400;	// 50
+//var XRESOLUTION = 1920;	// 240
+//var YRESOLUTION = 1080;	// 135
+var CHARSIZE = 8;
+
+var DEF_KEY_LOWEST = 37;	// lowest key code
+var DEF_KEY_LEFT = 37;
+var DEF_KEY_RIGHT = 39;
+var DEF_KEY_UP = 38;
+var DEF_KEY_DOWN = 40;
+var DEF_KEY_HIGHEST = 40;	// highest key code
+
+var ROTATED_KEY_LEFT = 38;
+var ROTATED_KEY_RIGHT = 40;
+var ROTATED_KEY_UP = 39;
+var ROTATED_KEY_DOWN = 37;
+
+// KEYCODES
+
+var KEY_LEFT = DEF_KEY_LEFT;
+var KEY_RIGHT = DEF_KEY_RIGHT;
+var KEY_UP = DEF_KEY_UP;
+var KEY_DOWN = DEF_KEY_DOWN;

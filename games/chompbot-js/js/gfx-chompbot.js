@@ -1,0 +1,63 @@
+// gfx-chompbot.js - made by tools/nextgfx.py from the Next game's gfx/layout.txt: don't edit, run the tool.
+// (c) 2026 Cyborg Unicorn Pty Ltd
+var GFX_CHOMPBOT =
+{
+	// the images for JSprites.addImagesToLibrary (class 'chompbot'): the ink mask, the tile rows, the sprite rows
+	images: [
+		{ name:'chompbot_ink', classes:'chompbot', source:'images/chompbot/tiles_ink.png' },
+		{ name:'chompbot_t0', classes:'chompbot', source:'images/chompbot/tiles_0.png' },
+		{ name:'chompbot_t2', classes:'chompbot', source:'images/chompbot/tiles_2.png' },
+		{ name:'chompbot_t3', classes:'chompbot', source:'images/chompbot/tiles_3.png' },
+		{ name:'chompbot_t4', classes:'chompbot', source:'images/chompbot/tiles_4.png' },
+		{ name:'chompbot_t5', classes:'chompbot', source:'images/chompbot/tiles_5.png' },
+		{ name:'chompbot_t6', classes:'chompbot', source:'images/chompbot/tiles_6.png' },
+		{ name:'chompbot_tw0', classes:'chompbot', source:'images/chompbot/tiles_w0.png' },
+		{ name:'chompbot_tw0fl', classes:'chompbot', source:'images/chompbot/tiles_w0fl.png' },
+		{ name:'chompbot_tw0off', classes:'chompbot', source:'images/chompbot/tiles_w0off.png' },
+		{ name:'chompbot_tw1', classes:'chompbot', source:'images/chompbot/tiles_w1.png' },
+		{ name:'chompbot_tw1fl', classes:'chompbot', source:'images/chompbot/tiles_w1fl.png' },
+		{ name:'chompbot_tw1off', classes:'chompbot', source:'images/chompbot/tiles_w1off.png' },
+		{ name:'chompbot_tw2', classes:'chompbot', source:'images/chompbot/tiles_w2.png' },
+		{ name:'chompbot_tw2fl', classes:'chompbot', source:'images/chompbot/tiles_w2fl.png' },
+		{ name:'chompbot_tw2off', classes:'chompbot', source:'images/chompbot/tiles_w2off.png' },
+		{ name:'chompbot_tw3', classes:'chompbot', source:'images/chompbot/tiles_w3.png' },
+		{ name:'chompbot_tw3fl', classes:'chompbot', source:'images/chompbot/tiles_w3fl.png' },
+		{ name:'chompbot_tw3off', classes:'chompbot', source:'images/chompbot/tiles_w3off.png' },
+		{ name:'chompbot_tw4', classes:'chompbot', source:'images/chompbot/tiles_w4.png' },
+		{ name:'chompbot_tw4fl', classes:'chompbot', source:'images/chompbot/tiles_w4fl.png' },
+		{ name:'chompbot_tw4off', classes:'chompbot', source:'images/chompbot/tiles_w4off.png' },
+		{ name:'chompbot_tw5', classes:'chompbot', source:'images/chompbot/tiles_w5.png' },
+		{ name:'chompbot_tw5fl', classes:'chompbot', source:'images/chompbot/tiles_w5fl.png' },
+		{ name:'chompbot_tw5off', classes:'chompbot', source:'images/chompbot/tiles_w5off.png' },
+		{ name:'chompbot_tw6', classes:'chompbot', source:'images/chompbot/tiles_w6.png' },
+		{ name:'chompbot_tw6fl', classes:'chompbot', source:'images/chompbot/tiles_w6fl.png' },
+		{ name:'chompbot_tw6off', classes:'chompbot', source:'images/chompbot/tiles_w6off.png' },
+		{ name:'chompbot_tw7', classes:'chompbot', source:'images/chompbot/tiles_w7.png' },
+		{ name:'chompbot_tw7fl', classes:'chompbot', source:'images/chompbot/tiles_w7fl.png' },
+		{ name:'chompbot_tw7off', classes:'chompbot', source:'images/chompbot/tiles_w7off.png' },
+		{ name:'chompbot_s0', classes:'chompbot', source:'images/chompbot/sprites_0.png' },
+		{ name:'chompbot_s1', classes:'chompbot', source:'images/chompbot/sprites_1.png' },
+		{ name:'chompbot_s2', classes:'chompbot', source:'images/chompbot/sprites_2.png' },
+		{ name:'chompbot_s3', classes:'chompbot', source:'images/chompbot/sprites_3.png' },
+		{ name:'chompbot_s4', classes:'chompbot', source:'images/chompbot/sprites_4.png' },
+		{ name:'chompbot_s5', classes:'chompbot', source:'images/chompbot/sprites_5.png' },
+		{ name:'chompbot_s6', classes:'chompbot', source:'images/chompbot/sprites_6.png' }
+	],
+	tilerows: ['0', '2', '3', '4', '5', '6', 'w0', 'w0fl', 'w0off', 'w1', 'w1fl', 'w1off', 'w2', 'w2fl', 'w2off', 'w3', 'w3fl', 'w3off', 'w4', 'w4fl', 'w4off', 'w5', 'w5fl', 'w5off', 'w6', 'w6fl', 'w6off', 'w7', 'w7fl', 'w7off'],		// tile images by palette row: 'chompbot_t<row>'
+	spriterows: 7,			// sprite images: 'chompbot_s0' .. 'chompbot_s6'
+	T_BLACK: 1,
+	T_BOLT: 2,
+	T_CELL: 3,
+	T_DOOR: 4,
+	T_LIFE: 7,
+	T_WALL: 96,
+	S_CHOMP: { col:0, row:0, frames:3, w:1, h:1 },
+	S_CHOMPU: { col:3, row:0, frames:3, w:1, h:1 },
+	S_DIE: { col:6, row:0, frames:8, w:1, h:1 },
+	S_BUG: { col:14, row:0, frames:2, w:1, h:1 },
+	S_EYES: { col:0, row:1, frames:4, w:1, h:1 },
+	S_SCARED: { col:4, row:1, frames:1, w:1, h:1 },
+	S_PTS: { col:5, row:1, frames:4, w:1, h:1 },
+	S_BONUS: { col:0, row:2, frames:8, w:1, h:1 },
+	S_BVAL: { col:8, row:2, frames:8, w:1, h:1 }
+};
