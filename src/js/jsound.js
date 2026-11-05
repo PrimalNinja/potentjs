@@ -22,9 +22,42 @@
 // pauses, and carries on from where it was when the page comes back (option pauseifhidden:false
 // to keep it going).
 //
+// Standalone: it carries its own helpers and needs nothing else on the page; destroy() lets go of
+// everything it listens to and closes its audio (a window closing, a game ending).
+//
 // (c) 2026 Cyborg Unicorn Pty Ltd - MIT License
 function JSound(objOptions_a)
 {
+	// its own helpers (as PotentJS's utils.js), so it needs nothing else on the page
+	function isFunction(fn_a)
+	{
+		var getType = {};
+		return (fn_a && (getType.toString.call(fn_a) === '[object Function]'));
+	}
+
+	function processArray(arr_a, cb_a)
+	{
+		var intRowNum = 1;
+		var intI = 0;
+		var blnAbort = false;
+
+		if (arr_a !== null)
+		{
+			while ((!blnAbort) && (intI < arr_a.length))
+			{
+				if (arr_a[intI] !== undefined)
+				{
+					if (isFunction(cb_a))
+					{
+						blnAbort = cb_a(arr_a[intI], intRowNum, intI);
+					}
+				}
+				intRowNum++;
+				intI++;
+			}
+		}
+	}
+
 	var DEF_CHANNELS = 3;
 	var DEF_CLOCK = 1750000;			// the sound chip's clock: a tone's frequency is clock / (16 * period)
 	var DEF_VOLUME = 0.25;				// the loudest a channel gets (of 1)
@@ -136,6 +169,25 @@ function JSound(objOptions_a)
 	window.addEventListener('mousedown', start, false);
 	window.addEventListener('touchstart', start, false);
 	window.addEventListener('touchend', start, false);
+
+	// lets go of everything: the listeners, the sound, the audio itself
+	this.destroy = function()
+	{
+		document.removeEventListener('visibilitychange', visibilityChanged, false);
+		document.removeEventListener('webkitvisibilitychange', visibilityChanged, false);
+		window.removeEventListener('keydown', start, false);
+		window.removeEventListener('mousedown', start, false);
+		window.removeEventListener('touchstart', start, false);
+		window.removeEventListener('touchend', start, false);
+		if (m_objAudio !== null)
+		{
+			if (typeof m_objAudio.close === 'function')
+			{
+				m_objAudio.close();
+			}
+			m_objAudio = null;
+		}
+	};
 
 	// ====================================================================================================
 	// PLAYING

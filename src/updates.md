@@ -324,3 +324,20 @@ game's own data (`js/data-<game>.js`) and art (`images/<game>/`). No library cha
   each matched in loudness), into `js/data-defhell-voice.js`.
 - **DEFENDER HELLGATE** now has the voice of the Next's DEFHELLV build: the same lines at the same
   moments, one at a time, and the keys 1-5 (volume), 0 (off) and V (off and back on).
+
+## JObj3D: NTC3D's Obj3D on three.js
+
+- **js/jobj3d.js** (new): the Obj3D contract from NTC BASIC's 3D engine, with three.js (r128) underneath, so a
+  game uses three.js by spawning things and answering events instead of scenes, meshes and materials. The same
+  classes and masks (CL_, M_), movers (MV_STILL ... MV_HOME), flags (OF_), events (EV_FIRE, EV_HIT, EV_LAND),
+  units (world units, a 50th's move, 256 to the turn) and calls (spawn, kill, setMover, hold, spin, fire,
+  fireAt, firePlayer, burst, boom, count, pick, onScreen, shift, update, nextEvent, draw), so a game can be
+  designed once for the Next and the browser. Built-in models (K_CUBE, K_SHIP, K_DART, K_BOLT, K_BLAST,
+  K_DEBRIS, K_ROCK) and addModel for E3Data-style models (vertices, faces, face colours). The camera is 90
+  degrees across as E3's. Events are given once each and an event about an object since taken out (or its slot
+  reused) is dropped. run(fnFrame) loops; destroy() lets everything go. getScene() etc. give three.js itself.
+- **obj3ddemo.htm**, **js/game-obj3ddemo.js** (new): a small space fight using it.
+- **js/jsound.js**, **js/jmusic.js**: standalone now. Each carries its own isFunction / processArray (no
+  utils.js needed) and has destroy(), letting go of its listeners and closing its audio. Same API otherwise,
+  so the games are unchanged.
+- **tests/test-jobj3d.js** (new): `node tests/test-jobj3d.js src/js` with three (npm) on NODE_PATH.

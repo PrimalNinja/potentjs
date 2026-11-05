@@ -35,9 +35,42 @@
 //   { event:'chorus' }             options.onEvent('chorus', this sprite's name)
 //   (commands take no time: the next note follows at once)
 //
+// Standalone: it carries its own helpers (it needs jsound.js, for the JSound it plays through);
+// destroy() stops it and lets go of the JSound it made (not one it was given).
+//
 // (c) 2026 Cyborg Unicorn Pty Ltd - MIT License
 function JMusic(objOptions_a)
 {
+	// its own helpers (as PotentJS's utils.js), so it needs nothing else on the page
+	function isFunction(fn_a)
+	{
+		var getType = {};
+		return (fn_a && (getType.toString.call(fn_a) === '[object Function]'));
+	}
+
+	function processArray(arr_a, cb_a)
+	{
+		var intRowNum = 1;
+		var intI = 0;
+		var blnAbort = false;
+
+		if (arr_a !== null)
+		{
+			while ((!blnAbort) && (intI < arr_a.length))
+			{
+				if (arr_a[intI] !== undefined)
+				{
+					if (isFunction(cb_a))
+					{
+						blnAbort = cb_a(arr_a[intI], intRowNum, intI);
+					}
+				}
+				intRowNum++;
+				intI++;
+			}
+		}
+	}
+
 	var m_objThis = this;
 	var m_objOptions = objOptions_a || {};
 	var NOTES = { C:0, D:2, E:4, F:5, G:7, A:9, B:11 };
@@ -426,6 +459,20 @@ function JMusic(objOptions_a)
 		if (m_objOptions.sound === undefined)
 		{
 			m_objSound.update();
+		}
+	};
+
+	// stops the music and lets go of the JSound it made (one it was given is the giver's)
+	this.destroy = function()
+	{
+		processArray(m_arrUsed, function(objSprite_a)
+		{
+			objSprite_a.isplaying = false;
+		});
+		if (m_objOptions.sound === undefined)
+		{
+			m_objSound.quiet();
+			m_objSound.destroy();
 		}
 	};
 }
